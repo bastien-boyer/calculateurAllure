@@ -1,0 +1,110 @@
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+form {
+  background-color: white;
+  padding: 5%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Réduire la largeur des champs distance et allure */
+.input-small {
+  width: 50%;
+}
+
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  background-color: #008cba;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#erreur {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.carte {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.champs-heure {
+  display: flex;
+}
+
+.champs-heure input {
+  margin-right: 10px;
+}
+
+.resultats {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.resultats h2 {
+  margin-bottom: 10px;
+}
+
+.resultats p {
+  margin-bottom: 5px;
+}
+
+.distance {
+  color: #008cba;
+}
+
+.temps {
+  color: #00cc66;
+}
+
+.allure {
+  color: #ff7f50;
+}
+
+@media (max-width: 500px) {
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+

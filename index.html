@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculateur d'allure</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculateur d'allure</h1>
+      <form class="form-container">
+        <label for="distance">Distance :</label>
+        <select id="distance" name="distance" class="input-small">
+          <option value="5">5 km</option>
+          <option value="10">10 km</option>
+          <option value="21.1">Semi-marathon (21.1 km)</option>
+          <option value="42.195">Marathon (42.195 km)</option>
+        </select>
+
+        <label for="heures">Temps (heure - minute) :</label>
+        <div class="champs-heure">
+          <input
+            type="number"
+            id="heures"
+            name="heures"
+            min="0"
+            max="23"
+            placeholder="Heure"
+          />
+          <input
+            type="number"
+            id="minutes"
+            name="minutes"
+            min="0"
+            max="59"
+            placeholder="Minute"
+          />
+        </div>
+        <div class="error"></div>
+        <button type="submit" class="primary-button">Calculer</button>
+      </form>
+
+      <div class="carte blockResultat card-container">
+        <div id="resultats">
+          <p id="distance_result"></p>
+          <p id="temps_result"></p>
+          <p id="allure_result"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
